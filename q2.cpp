@@ -9,14 +9,17 @@ using namespace std;
 
 int main(){
 int length=6; //length of array
-int num[]={5,2,6,8,1,9};
-int target=12;
+int num[]={8,7,2,5,3,1,8};
+int target=10;
 bool flag=false;
 map<int,int> mymap;
 for(int i=0;i<length-1;i++)
 {
     for(int j=i+1;j<length;j++)
     {
+       
+
+
         if(num[i]+num[j]==target){
             flag=true;
         cout<<"Pair found ("<<num[i]<<","<<num[j]<<")"<<endl;
